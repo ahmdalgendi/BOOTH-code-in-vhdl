@@ -1,0 +1,6 @@
+[Version]
+Version=8.1
+[Designs]
+booth_2=.\BOOTH_2\BOOTH_2.adf
+[Expand]
+booth_2=1
