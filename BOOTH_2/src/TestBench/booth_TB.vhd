@@ -35,8 +35,8 @@ begin
 			C => C
 		);
 
-	-- Add your stimulus here ...  
-		process 
+	-- Add your stimulus here ...
+process 
 	begin 			 
 		A <= "00000100";
 		B <= "00000001" ;
@@ -47,7 +47,7 @@ begin
 		A <= "00000101";
 		B <= "00000010" ;
 		
-		end process ;
+	end process ;
 
 end TB_ARCHITECTURE;
 

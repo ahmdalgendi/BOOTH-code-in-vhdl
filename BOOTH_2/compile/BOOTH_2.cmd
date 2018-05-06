@@ -1,1 +1,1 @@
--w -s "c:\My_Designs\BOOTH_2\library.cfg"  -j "c:\My_Designs\BOOTH_2\BOOTH_2\projlib.cfg"  -d "c:\My_Designs\BOOTH_2\BOOTH_2\compile"   -work BOOTH_2  -dbg -e 100 -2002 "c:\\My_Designs\\BOOTH_2\\BOOTH_2\\src\\booth.vhd"  "c:\\My_Designs\\BOOTH_2\\BOOTH_2\\src\\testbench\\booth_tb.vhd" 
+-w -s "c:\My_Designs\BOOTH_2\library.cfg"  -j "c:\My_Designs\BOOTH_2\BOOTH_2\projlib.cfg"  -d "c:\My_Designs\BOOTH_2\BOOTH_2\compile"   -work BOOTH_2  -dbg -e 100 -2002 "c:\\My_Designs\\BOOTH_2\\BOOTH_2\\src\\TestBench\\booth_TB.vhd" 

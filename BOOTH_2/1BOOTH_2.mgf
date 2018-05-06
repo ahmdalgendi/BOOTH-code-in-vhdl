@@ -729,7 +729,7 @@ I 000046 55 2474          1524868856923 BOOTH
 	(_model . BOOTH 1 -1
 	)
 )
-V 000046 55 2474          1524868936093 BOOTH
+I 000046 55 2474          1524868936093 BOOTH
 (_unit VHDL (booth 0 30 (booth 0 40 ))
 	(_version v147)
 	(_time 1524868936094 2018.04.28 00:42:16)
@@ -777,7 +777,7 @@ V 000046 55 2474          1524868936093 BOOTH
 	(_model . BOOTH 1 -1
 	)
 )
-V 000056 55 2176          1524868936168 TB_ARCHITECTURE
+I 000056 55 2176          1524868936168 TB_ARCHITECTURE
 (_unit VHDL (booth_tb 0 8 (tb_architecture 0 11 ))
 	(_version v147)
 	(_time 1524868936169 2018.04.28 00:42:16)
@@ -834,7 +834,7 @@ V 000056 55 2176          1524868936168 TB_ARCHITECTURE
 	(_model . TB_ARCHITECTURE 1 -1
 	)
 )
-V 000038 55 417 0 testbench_for_booth
+I 000038 55 417 0 testbench_for_booth
 (_configuration VHDL (testbench_for_booth 0 54 (booth_tb))
 	(_version v147)
 	(_time 1524868936179 2018.04.28 00:42:16)
@@ -842,6 +842,270 @@ V 000038 55 417 0 testbench_for_booth
 	(_use (std(standard))(ieee(numeric_std))(ieee(std_logic_1164))(ieee(std_logic_unsigned)))
 	(_parameters dbg)
 	(_code 787f7879752e2f6f7c796a222c)
+	(_architecture TB_ARCHITECTURE
+		(_instantiation UUT
+			(_entity . booth booth
+			)
+		)
+	)
+)
+V 000046 55 2474          1525646727136 BOOTH
+(_unit VHDL (booth 0 30 (booth 0 40 ))
+	(_version v147)
+	(_time 1525646727137 2018.05.07 00:45:27)
+	(_source (\./src/BOOTH.vhd\))
+	(_use (std(standard))(ieee(std_logic_1164))(ieee(std_logic_unsigned))(ieee(numeric_std)))
+	(_parameters dbg)
+	(_code 580f5e5b060f5a4f5f5a40020b)
+	(_entity
+		(_time 1524868400849)
+	)
+	(_object
+		(_type (_internal ~SIGNED{7~downto~0}~12 0 32 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_port (_internal A ~SIGNED{7~downto~0}~12 0 32 (_entity (_in ))))
+		(_type (_internal ~SIGNED{7~downto~0}~122 0 33 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_port (_internal B ~SIGNED{7~downto~0}~122 0 33 (_entity (_in ))))
+		(_type (_internal ~SIGNED{15~downto~0}~12 0 34 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 15)(i 0))))))
+		(_port (_internal C ~SIGNED{15~downto~0}~12 0 34 (_entity (_out ))))
+		(_type (_internal ~SIGNED{8~downto~0}~13 0 47 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 8)(i 0))))))
+		(_variable (_internal tmp_B ~SIGNED{8~downto~0}~13 0 47 (_process 0 )))
+		(_type (_internal ~SIGNED{15~downto~0}~13 0 48 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 15)(i 0))))))
+		(_variable (_internal tmp_out ~SIGNED{15~downto~0}~13 0 48 (_process 0 )))
+		(_type (_internal ~SIGNED{15~downto~0}~132 0 49 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 15)(i 0))))))
+		(_variable (_internal tmp_A ~SIGNED{15~downto~0}~132 0 49 (_process 0 )))
+		(_type (_internal ~SIGNED{15~downto~0}~134 0 50 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 15)(i 0))))))
+		(_variable (_internal fixed_A ~SIGNED{15~downto~0}~134 0 50 (_process 0 )))
+		(_variable (_internal i ~extSTD.STANDARD.INTEGER 0 51 (_process 0 )))
+		(_process
+			(line__46(_architecture 0 0 46 (_process (_simple)(_target(2))(_sensitivity(0)(1)))))
+		)
+		(_subprogram
+			(_external resolved (ieee std_logic_1164 15))
+		)
+		(_type (_external ~extieee.std_logic_1164.STD_ULOGIC (ieee std_logic_1164 STD_ULOGIC)))
+		(_type (_external ~extieee.std_logic_1164.STD_LOGIC (ieee std_logic_1164 STD_LOGIC)))
+		(_type (_external ~extieee.NUMERIC_STD.SIGNED (ieee NUMERIC_STD SIGNED)))
+		(_type (_external ~extSTD.STANDARD.INTEGER (std STANDARD INTEGER)))
+		(_type (_external ~extSTD.STANDARD.NATURAL (std STANDARD NATURAL)))
+	)
+	(_static
+		(33686018 33686018 2 )
+		(33686018 33686018 33686018 33686018 )
+		(770 )
+		(515 )
+	)
+	(_model . BOOTH 1 -1
+	)
+)
+I 000056 55 2176          1525646727347 TB_ARCHITECTURE
+(_unit VHDL (booth_tb 0 8 (tb_architecture 0 11 ))
+	(_version v147)
+	(_time 1525646727348 2018.05.07 00:45:27)
+	(_source (\./src/TestBench/booth_TB.vhd\))
+	(_use (std(standard))(ieee(numeric_std))(ieee(std_logic_1164))(ieee(std_logic_unsigned)))
+	(_parameters dbg)
+	(_code 336434366664312434362b6a34)
+	(_entity
+		(_time 1524866283204)
+	)
+	(_component
+		(booth
+			(_object
+				(_port (_internal A ~SIGNED{7~downto~0}~13 0 15 (_entity (_in ))))
+				(_port (_internal B ~SIGNED{7~downto~0}~132 0 16 (_entity (_in ))))
+				(_port (_internal C ~SIGNED{15~downto~0}~13 0 17 (_entity (_out ))))
+			)
+		)
+	)
+	(_instantiation UUT 0 31 (_component booth )
+		(_port
+			((A)(A))
+			((B)(B))
+			((C)(C))
+		)
+		(_use (_entity . booth)
+		)
+	)
+	(_object
+		(_type (_internal ~SIGNED{7~downto~0}~13 0 15 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_type (_internal ~SIGNED{7~downto~0}~132 0 16 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_type (_internal ~SIGNED{15~downto~0}~13 0 17 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 15)(i 0))))))
+		(_type (_internal ~SIGNED{7~downto~0}~134 0 21 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_signal (_internal A ~SIGNED{7~downto~0}~134 0 21 (_architecture (_uni ))))
+		(_signal (_internal B ~SIGNED{7~downto~0}~134 0 22 (_architecture (_uni ))))
+		(_type (_internal ~SIGNED{15~downto~0}~136 0 24 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 15)(i 0))))))
+		(_signal (_internal C ~SIGNED{15~downto~0}~136 0 24 (_architecture (_uni ))))
+		(_process
+			(line__39(_architecture 0 0 39 (_process (_wait_for)(_target(0)(1)))))
+		)
+		(_subprogram
+			(_external resolved (ieee std_logic_1164 15))
+		)
+		(_type (_external ~extieee.std_logic_1164.STD_ULOGIC (ieee std_logic_1164 STD_ULOGIC)))
+		(_type (_external ~extieee.std_logic_1164.STD_LOGIC (ieee std_logic_1164 STD_LOGIC)))
+		(_type (_external ~extieee.NUMERIC_STD.SIGNED (ieee NUMERIC_STD SIGNED)))
+	)
+	(_static
+		(33686018 33686274 )
+		(33686018 50463234 )
+		(33686018 33751554 )
+		(33686018 50463490 )
+	)
+	(_model . TB_ARCHITECTURE 1 -1
+	)
+)
+I 000038 55 417 0 testbench_for_booth
+(_configuration VHDL (testbench_for_booth 0 54 (booth_tb))
+	(_version v147)
+	(_time 1525646727370 2018.05.07 00:45:27)
+	(_source (\./src/testbench/booth_tb.vhd\))
+	(_use (std(standard))(ieee(numeric_std))(ieee(std_logic_1164))(ieee(std_logic_unsigned)))
+	(_parameters dbg)
+	(_code 42144340451415554643501816)
+	(_architecture TB_ARCHITECTURE
+		(_instantiation UUT
+			(_entity . booth booth
+			)
+		)
+	)
+)
+I 000056 55 2176          1525646822244 TB_ARCHITECTURE
+(_unit VHDL (booth_tb 0 8 (tb_architecture 0 11 ))
+	(_version v147)
+	(_time 1525646822245 2018.05.07 00:47:02)
+	(_source (\./src/TestBench/booth_TB.vhd\))
+	(_use (std(standard))(ieee(numeric_std))(ieee(std_logic_1164))(ieee(std_logic_unsigned)))
+	(_parameters dbg)
+	(_code dddad88fdf8adfcadad8c584da)
+	(_entity
+		(_time 1524866283204)
+	)
+	(_component
+		(booth
+			(_object
+				(_port (_internal A ~SIGNED{7~downto~0}~13 0 15 (_entity (_in ))))
+				(_port (_internal B ~SIGNED{7~downto~0}~132 0 16 (_entity (_in ))))
+				(_port (_internal C ~SIGNED{15~downto~0}~13 0 17 (_entity (_out ))))
+			)
+		)
+	)
+	(_instantiation UUT 0 31 (_component booth )
+		(_port
+			((A)(A))
+			((B)(B))
+			((C)(C))
+		)
+		(_use (_entity . booth)
+		)
+	)
+	(_object
+		(_type (_internal ~SIGNED{7~downto~0}~13 0 15 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_type (_internal ~SIGNED{7~downto~0}~132 0 16 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_type (_internal ~SIGNED{15~downto~0}~13 0 17 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 15)(i 0))))))
+		(_type (_internal ~SIGNED{7~downto~0}~134 0 21 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_signal (_internal A ~SIGNED{7~downto~0}~134 0 21 (_architecture (_uni ))))
+		(_signal (_internal B ~SIGNED{7~downto~0}~134 0 22 (_architecture (_uni ))))
+		(_type (_internal ~SIGNED{15~downto~0}~136 0 24 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 15)(i 0))))))
+		(_signal (_internal C ~SIGNED{15~downto~0}~136 0 24 (_architecture (_uni ))))
+		(_process
+			(line__39(_architecture 0 0 39 (_process (_wait_for)(_target(0)(1)))))
+		)
+		(_subprogram
+			(_external resolved (ieee std_logic_1164 15))
+		)
+		(_type (_external ~extieee.std_logic_1164.STD_ULOGIC (ieee std_logic_1164 STD_ULOGIC)))
+		(_type (_external ~extieee.std_logic_1164.STD_LOGIC (ieee std_logic_1164 STD_LOGIC)))
+		(_type (_external ~extieee.NUMERIC_STD.SIGNED (ieee NUMERIC_STD SIGNED)))
+	)
+	(_static
+		(33686018 33686274 )
+		(33686018 50463234 )
+		(33686018 33751554 )
+		(33686018 50463490 )
+	)
+	(_model . TB_ARCHITECTURE 1 -1
+	)
+)
+I 000038 55 417 0 testbench_for_booth
+(_configuration VHDL (testbench_for_booth 0 54 (booth_tb))
+	(_version v147)
+	(_time 1525646822282 2018.05.07 00:47:02)
+	(_source (\./src/TestBench/booth_TB.vhd\))
+	(_use (std(standard))(ieee(numeric_std))(ieee(std_logic_1164))(ieee(std_logic_unsigned)))
+	(_parameters dbg)
+	(_code 0c0a000a5a5a5b1b080d1e5658)
+	(_architecture TB_ARCHITECTURE
+		(_instantiation UUT
+			(_entity . booth booth
+			)
+		)
+	)
+)
+V 000056 55 2176          1525646963493 TB_ARCHITECTURE
+(_unit VHDL (booth_tb 0 8 (tb_architecture 0 11 ))
+	(_version v147)
+	(_time 1525646963494 2018.05.07 00:49:23)
+	(_source (\./src/TestBench/booth_TB.vhd\))
+	(_use (std(standard))(ieee(numeric_std))(ieee(std_logic_1164))(ieee(std_logic_unsigned)))
+	(_parameters dbg)
+	(_code 9f9acb909fc89d88989a87c698)
+	(_entity
+		(_time 1524866283204)
+	)
+	(_component
+		(booth
+			(_object
+				(_port (_internal A ~SIGNED{7~downto~0}~13 0 15 (_entity (_in ))))
+				(_port (_internal B ~SIGNED{7~downto~0}~132 0 16 (_entity (_in ))))
+				(_port (_internal C ~SIGNED{15~downto~0}~13 0 17 (_entity (_out ))))
+			)
+		)
+	)
+	(_instantiation UUT 0 31 (_component booth )
+		(_port
+			((A)(A))
+			((B)(B))
+			((C)(C))
+		)
+		(_use (_entity . booth)
+		)
+	)
+	(_object
+		(_type (_internal ~SIGNED{7~downto~0}~13 0 15 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_type (_internal ~SIGNED{7~downto~0}~132 0 16 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_type (_internal ~SIGNED{15~downto~0}~13 0 17 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 15)(i 0))))))
+		(_type (_internal ~SIGNED{7~downto~0}~134 0 21 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 7)(i 0))))))
+		(_signal (_internal A ~SIGNED{7~downto~0}~134 0 21 (_architecture (_uni ))))
+		(_signal (_internal B ~SIGNED{7~downto~0}~134 0 22 (_architecture (_uni ))))
+		(_type (_internal ~SIGNED{15~downto~0}~136 0 24 (_array ~extieee.std_logic_1164.STD_LOGIC ((_downto (i 15)(i 0))))))
+		(_signal (_internal C ~SIGNED{15~downto~0}~136 0 24 (_architecture (_uni ))))
+		(_process
+			(line__39(_architecture 0 0 39 (_process (_wait_for)(_target(0)(1)))))
+		)
+		(_subprogram
+			(_external resolved (ieee std_logic_1164 15))
+		)
+		(_type (_external ~extieee.std_logic_1164.STD_ULOGIC (ieee std_logic_1164 STD_ULOGIC)))
+		(_type (_external ~extieee.std_logic_1164.STD_LOGIC (ieee std_logic_1164 STD_LOGIC)))
+		(_type (_external ~extieee.NUMERIC_STD.SIGNED (ieee NUMERIC_STD SIGNED)))
+	)
+	(_static
+		(33686018 33686274 )
+		(33686018 50463234 )
+		(33686018 33751554 )
+		(33686018 50463490 )
+	)
+	(_model . TB_ARCHITECTURE 1 -1
+	)
+)
+V 000038 55 417 0 testbench_for_booth
+(_configuration VHDL (testbench_for_booth 0 54 (booth_tb))
+	(_version v147)
+	(_time 1525646963510 2018.05.07 00:49:23)
+	(_source (\./src/TestBench/booth_TB.vhd\))
+	(_use (std(standard))(ieee(numeric_std))(ieee(std_logic_1164))(ieee(std_logic_unsigned)))
+	(_parameters dbg)
+	(_code afabfdf8fcf9f8b8abaebdf5fb)
 	(_architecture TB_ARCHITECTURE
 		(_instantiation UUT
 			(_entity . booth booth

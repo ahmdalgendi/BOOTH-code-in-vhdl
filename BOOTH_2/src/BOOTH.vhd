@@ -65,7 +65,7 @@ begin
 			tmp_A :=  shift_left(tmp_A , i) ;
 			tmp_out :=  tmp_out + tmp_A ;
 		end if;
-		if ((tmp_b(i+1 downto i) = "10"  )) then
+		if ((tmp_b(i+1 downto i) = "10"  )) then   --000101
 			tmp_A := -tmp_A;
 
 			tmp_A :=  shift_left(tmp_A , i) ;

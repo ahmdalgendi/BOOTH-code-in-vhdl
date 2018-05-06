@@ -1,7 +1,4 @@
-MESSAGE "File: c:\My_Designs\BOOTH_2\BOOTH_2\src\booth.vhd" 
-MESSAGE "Compile Entity "BOOTH"" 
-MESSAGE "Compile Architecture "BOOTH" of Entity "BOOTH"" 
-MESSAGE "File: c:\My_Designs\BOOTH_2\BOOTH_2\src\testbench\booth_tb.vhd" 
+MESSAGE "File: c:\My_Designs\BOOTH_2\BOOTH_2\src\TestBench\booth_TB.vhd" 
 MESSAGE "Compile Entity "booth_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "booth_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_booth"" 
